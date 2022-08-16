@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;600;700&family=Montez&family=Work+Sans:wght@400;500;600&display=swap" >
     <title>Camellia</title>
 </head>
-<body>
+<body class="active">
     <!-- Start Settings Box -->
     <div class="settings-box ">
         <div class="toggle-settings">
             <i class="fa fa-gear "></i>
         </div>
+        <div id="theme-toggler" class="fa-solid fa-moon"></div>
+         
         <div class="settings-container">
             <div class="option-box">
                 <h4>Colors</h4>
@@ -30,24 +32,54 @@
                     <li data-color="#009688"></li>
                 </ul>
             </div>
+            <div class="option-box random">
+                <h4>Random Backgrounds</h4>
+                <div class="random-backgrounds">
+                    <span class="yes active" data-background="yes">yes</span>
+                    <span class="no" data-background="no">No</span>
+                </div>
+              
+                
+            </div>
             
         </div>
 
     </div>
     <!--End Settings Box   -->
+    <!-- Start Header -->
+    <div class="header">
+        <p>Get 20% off your first order: <span>20%OFF</span></p>
+        <div class="loging">
+            <a href="#">Login</a>
+            <div class="register">
+                <a href="#">Register</a>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
     <!-- Start Landing Page -->
-    <div class="landing-page">
+    <header><div class="landing-page">
         <div class="overlay"></div>
         <div class="header-area">
             <div class="logo">Camellia</div>
-            <ul class="links">
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">products</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <nav>
+                <i class="fas fa-bars toggle-menu"></i>
+                <ul class="links">
+                    <li><a href="#" class="active">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="form">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-heart red"></i>
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+            </nav>
+
         </div>
+    </header>
         <div class="introduction-text">
             <h1>Welcome To <span>Camellia</span> Floristic Studio</h1>
             <p>As a full service florist, our team can handle all your floral needs. We offer a multitude of services including retail, residential, full scale wedding and event planning.</p>
@@ -56,6 +88,56 @@
         <i class="fas fa-angle-right change-background fa-2x" onclick="next()"></i> -->
     </div>
     <!-- End Landing page -->
+    <!-- Start About Us -->
+    <div class="container">
+        <div class="about-us">
+            <div class="info-box">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum aliquam explicabo dolor excepturi iure quibusdam placeat modi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum explicabo reprehenderit numquam atque, sunt ducimus! Ex laborum fugit consequatur. Possimus odio laborum commodi corrupti vero harum porro ullam. Est, adipisci.</p>
+            </div>
+            <div class="image-box">
+                <img src="/image/about.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start Services -->
+    <div class="container">
+        <div class="services">
+            <div class="box">
+                <div class="image">
+                    <img src="/image/services 1.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ready To Be Impressed</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  aliquam quis numquam illo optio incidunt.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/image/services 2.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Powerful Solutions</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  aliquam quis numquam illo optio incidunt.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="/image/services 3.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Leaders Of Tomorrow</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  aliquam quis numquam illo optio incidunt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+
+
    <script src="/js/master.js"></script> 
 </body>
 </html>
